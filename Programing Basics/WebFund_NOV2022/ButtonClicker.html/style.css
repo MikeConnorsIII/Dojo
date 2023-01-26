@@ -1,0 +1,61 @@
+.navbar{
+    height: 50px;background-color: grey;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.login{
+    background-color: lightskyblue;
+    color: white;
+    box-shadow: 3px 3px 3px black;
+}
+
+.container{
+    border: 3px solid black;
+    height: 200px;
+    width: 400px;
+    margin: 10px 10px;
+}
+.container2{
+    border: 3px solid black;
+    height: 150px;
+    width: 200px;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.container3{
+    border: 3px solid black;
+    height: 200px;
+    width: 400px;
+    margin: 10px 10px;
+/* display block is standard for a div */
+}
+
+.container button{
+    background-color: yellow;
+    box-shadow: 2px 2px 2px black;
+}
+
+.container2 button{
+    background-color: green;
+    margin: 25px;
+}
+
+.container3 button{
+    background-color: yellow;
+    box-shadow: 2px 2px 2px black;
+}
+
+.def{
+    align-items: center;
+    vertical-align: middle;
+}
+
+.flex{
+    display: flex;
+}

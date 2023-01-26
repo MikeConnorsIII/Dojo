@@ -1,0 +1,101 @@
+/* #import url('https://fonts.google.com/specimen/Balsamiq+Sans?query=bals'); */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: ; */
+
+    /* come fix this font */
+}
+/* body{
+    min-width: 900px;
+} */
+
+.hidden{
+    visibility: hidden;
+    /* can code this later with html to remove */
+}
+
+.tab1{
+    margin-left: 40px;
+}
+.tab2{
+    margin-left: 80px;
+}
+.tab3{
+    margin-left: 120px;
+}
+/* main content classes */
+.main{
+    display: flex;
+    background-color: bisque;
+    height: 1000px;
+    /* /we will strip away height until we have content */
+}
+
+.col1{
+    flex: 1;
+    /* background-color: aqua; */
+    height: 1000px;
+    padding: 30px;
+}
+
+.col2{
+    flex: 3;
+    background-color: brown;
+}
+
+.content{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.order-guide{
+    flex: 2;
+    background-color: dodgerblue;
+    color: white;
+    /* height: 200px; was removed after we ran out of space so the content can fit*/
+    border-radius: 15px;
+    /* 50% = circle 15px tapers */
+}
+
+.order-guide h1{
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+}
+
+.row:hover{
+    background-color: rgb(107, 177, 247)
+
+}
+
+.step{
+    color: dodgerblue;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    /* text-align: center; DID NOT AFFECT THE TEXT TOO MUCH */
+    margin: 10px;
+}
+
+
+
+/* this is the circle element */
+
+.poke-def{
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+}
+
+/* winter dropped a zip of photos into the file on the left */
+
+ul * {
+    color: lightgrey;
+    list-style: none;
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+/* -----------------------reset------------------------------------------------------ */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    font-size: 2em;
+}
+
+button{
+    box-shadow: 3px 3px 1px black;
+    margin-left: 15px;
+    padding: 10px;
+    font-size: 2em;
+}
+
+input{
+    font-size: 2em;
+}
+
+img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*----------------------------------------------- classes -----------------------------------*/
+.pad10{
+    padding: 10px;
+}
+
+.pad30{
+    padding: 30px;
+}
+
+.flx{
+    display: flex;
+}
+.f3{
+    flex: 3;
+}
+.f2{
+    flex: 2;
+}
+
+.jcbet{
+    justify-content: space-between;
+}
+
+.jceven{
+    justify-content: space-evenly;
+}
+
+.jccen{
+    justify-content: center;
+}
+
+.vcenter{
+    align-items: center;
+}
+
+.color1{
+    color: rgb(216, 108, 25);
+}
+
+.bg1{
+    background-color: rgb(216, 108, 25);;
+    padding: 10px;
+}
+
+.color2{
+    color: rgb(24, 47, 140);
+}
+
+.bg2{
+    background-color: rgb(24, 47, 140);
+    color: white;
+    padding: 10px;
+}
+
+.centertext{
+    text-align: center;
+}
+
+.imgsmol{
+    height: 25px;
+    width:25px
+    }
+
+
+/* ------------------------------------------------Main-------------------------------------*/
+
+.navbar{
+    background-color: rgb(48, 42, 42);
+    height: 50px;
+    color: white;
+    margin: 0 10%;
+    padding: 20px;
+}
+
+.searchbar{
+    background-color: bisque;
+    margin: 0 10%;
+    margin-bottom: 20px;
+}
+.searchbar img{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 50%;
+}
+.main{
+    background-color: greenyellow;
+    /* remember to remove height later so everythign fits */
+    /* height: 1200px; */
+    margin: 0 10%;
+}
+
+.recipe{
+    background-color: rgb(178, 190, 201);
+    /* remember to remove height later so everythign fits */
+    /* height: 700px; */
+}
+
+.recipe h3{
+    text-decoration: underline;
+    color: -webkit-link;
+}
+
+.recommended{
+    background-color: white;
+    /* remember to remove height later so everythign fits */
+    /* height: 700px; */
+}

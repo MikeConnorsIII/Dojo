@@ -1,0 +1,26 @@
+h1{
+    border: 2px solid aqua;
+    border-radius: 50px;
+    width: 200px;
+    text-align: center;
+    color: aqua;
+}
+
+h2{
+    border: 2px solid aqua;
+    background-color: aqua;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    height: 25px;
+    width: 25px;
+}
+
+h3{
+    border: 2px solid black;
+    color: white;
+    background-color: blue;
+    width: 200px;
+    text-align: center;
+    box-shadow: 50px;
+}

@@ -1,0 +1,28 @@
+h1{
+    color: rebeccapurple;
+}
+
+.tealbg{
+    background-color: aqua;
+}
+
+.display-inlineblock{
+    display: inline-block;
+}
+
+.box
+{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    background-color: blue;
+}
+
+.box-container{
+    padding: 20px;
+    background-color: chartreuse;
+}
+
+.bordered{
+    border:2px solid red
+}

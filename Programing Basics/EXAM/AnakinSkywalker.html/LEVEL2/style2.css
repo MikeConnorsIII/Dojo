@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    /* ADD A SANS SERIF DEFAULT FONT HERE */
+}
+
+body {
+    background-color: wheat;
+}
+
+p,
+img {
+    font: bold;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: serif;
+    font-style: italic;
+}
+
+#container {
+    width: 900px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: white;
+    border-left: 2px solid grey;
+    border-right: 2px solid grey;
+    /* AND ADD A LIGHT GREY BORDER ON THE LEFT AND RIGHT */ 
+}
+
+#header {
+    color: white;
+    padding: 20px;
+    background-color: #79b5f1;
+    /* CHANGE THE TEXT COLOR TO WHITE AND
+    THE BACKGROUND COLOR SHOULD BE #79b5f1 */
+}
+
+#nav {
+    background-color:rgb(192, 192, 192);
+    list-style: none;
+    padding:15px;
+    display: flex;
+
+    /* CHANGE THE BACKGROUND COLOR TO LIGHT GRAY
+    REMOVE THE BULLET POINTS
+    SHOULD YOU CHANGE THE WIDTH? (No, leave it to parent size)
+    WHAT ABOUT PADDING?  (Yes) 
+    DISPLAY THIS CONTAINER'S CHILDREN SIDE BY SIDE */
+}
+
+#nav a {
+    text-decoration: none;
+    margin-right: 10px;
+    /* REMOVE THE UNDERLINES
+    ADD SPACE BETWEEN THE LINKS */
+}
+
+main {
+    padding: 20px;
+}

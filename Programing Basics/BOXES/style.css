@@ -1,0 +1,51 @@
+
+
+h1 {
+    color: darkred;
+}
+
+img {
+    width: 300px;
+    padding: 20px;
+    background-color: blue;
+    border: 2px solid white;
+}
+
+.margin-yellow {
+    margin: 20px;
+    background-color: darkorange;
+    
+}
+
+.bg-dark {
+    background-color: black;
+
+}
+
+.text-light {
+    color: aliceblue;
+}
+
+.box {
+    vertical-align: top;
+    background-color: darkgray;
+    display:inline-block;
+    width: 400px;
+    display:inline-block;
+}
+
+.box2{ 
+    vertical-align: top;
+    background-color: brown;
+    width:400px;
+    height:400px;
+    display:inline-block;
+}
+
+.content {
+    background-color: cornflowerblue;
+    margin:0px;
+    padding: 20px;
+}
+
+/* padding inside and margin is on the outside */

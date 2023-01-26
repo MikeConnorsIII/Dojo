@@ -1,0 +1,30 @@
+link:css
+
+.text-orange { 
+    color:orange;
+    background-color: aqua; 
+}
+
+table,
+td {
+    border:2px solid black;
+}
+
+.bg-dark{
+    background-color: aqua;
+}
+
+/* class =.before color reusable - id 1 time - global selector*/
+
+/* assigning all paragraphs a color */
+p {
+    color: red;
+}
+
+
+/* To define ID */
+#yellow {
+    color: yellow;
+}
+
+/* ID(single use)>class>general selector such as p red above */

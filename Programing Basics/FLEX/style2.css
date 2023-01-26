@@ -1,0 +1,38 @@
+.blue{
+    width: 300px;
+    height:300px;
+    background-color:#002D62;
+    display: ;
+}
+
+.red{
+    width: 300px;
+    height:300px;
+    background-color:#CE1126;
+}
+
+.red2{
+    width: 300px;
+    height:300px;
+    background-color:#CE1126;
+}
+
+.white{
+    width: 75px;
+    height:300px;
+    background-color:#000000;
+}
+
+.flag1 {
+    display: flex;
+    margin-bottom: 75px;
+    margin-right: 75px;
+}
+
+.flag2 {
+    display:flex;
+}
+
+img{
+    display: center;
+}

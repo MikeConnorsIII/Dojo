@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustDessert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar flx jcbet vcenter pad10">
+        <h1>Just<span class="color1">Dessert</span></h1>
+        <div class="flx">
+            <button class="bg1" onclick="remove(this)">Join</button>
+            <button class="bg2">Login</button>
+        </div>
+    </div>
+    <div class="searchbar">
+        <ul class="flx vcenter jceven pad30 centertext">
+            <li>
+                <input class="pad10 d" type="text" placeholder="Search">
+                <button onclick="search()"
+                class="bg2">GO</button>
+            </li>
+            <li>
+                <img src="cake.png" alt="cakes">
+                <p>Cakes</p>
+            </li>
+            <li>
+                <img src="ice-cream.png" alt="ice cream">
+                <p>Ice Cream</p>
+            </li>
+            <li>
+                <img src="cookie.png" alt="cookie">
+                <p>Cookies</p>
+            </li>
+            <li>
+                <img src="pie.png" alt="pie">
+                <p>Pies</p>
+            </li>
+        </ul>
+    </div>
+    <div class="main flx">
+        <div class="recipe f3 pad30">
+            <h1 class="centertext color2">Recipe of the Day</h1>
+            <img src="orange-tart.jpg" alt="tart">
+            <div class="flx jcbet">
+                <div class="">
+                    <p>Orange Tea Jelly Tart</p>
+                    <p>By: <a href="">yuripiano</a></p>
+                </div>
+                <div class="flx vcenter">
+                    <img onclick="add('.b')" class="imgsmol" src="heart.png" alt="heart">
+                    <p class="b">68</p>
+                </div>
+            </div>
+            <h3 class="centertext">See Full Recipe</h3>
+        </div>
+        <div class="recommended f2 pad30">
+            <h1>Recommended for you:</h1>
+            <img src="macarons.jpg" alt="macarons">
+            <div class="flx jcbet">
+                <div class="">
+                    <p>Macarons
+                    <br>
+                    By: <a href="">EmilieW</a></p>
+                </div>
+                <div class="flx vcenter"><img onclick="add('.c')" class="imgsmol" src="heart.png" alt="heart">
+                    <p class="c">212</p>
+                </div>
+            </div>
+            <img src="creme-brulee.jpg" alt="creme-brulee">
+            <div class="flx jcbet">
+                <div class="">
+                    <p>Creme Brulee</p>
+                    <p>By: <a href="">yuripiano</a></p>
+                </div>
+                <div class="flx vcenter"><img onclick="add('.a')" class="imgsmol" src="heart.png" alt="heart">
+                    <p class="a">33</p>
+                </div>
+            </div>
+
+            <th>
+
+                <tr>asdasdasd</tr>
+                <tr>asdasdasd</tr>
+                <tr>dasdasd</tr>
+            </th>
+            <tr></tr>
+
+            <script src="script.js"></script>
+</body>
+
+</html>

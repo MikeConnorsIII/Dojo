@@ -1,0 +1,85 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.margin{
+    margin: auto;
+}
+
+.navbar{
+    background-color: grey;
+    height: 80px;
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.navbar button{
+    background-color: rgb(36, 143, 179);
+    color: white;
+    box-shadow: 2px 2px 2px black;
+    padding: 5px;
+}
+/* margin auto centers automatically */
+
+.main{
+    /* background-color: blueviolet; */
+    width: 1000px;
+    height: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.col1{
+    flex: 2;
+}
+
+.col2{
+    flex: 1;
+}
+
+.box{
+    border: 2px solid black;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+}
+
+.box button{
+    background-color: yellow;
+}
+
+#col2 button{
+    background-color: rgb(47, 177, 47);
+
+}
+
+.text-center{
+    text-align: center;
+}
+
+.flx{
+    display: flex;
+}
+
+.center{
+    align-items: center;
+}
+
+.sa{
+    justify-content: space-around;
+}
+
+.pad{
+    padding: 30px;
+}
+/* .box-left p{
+    text-align: center;
+} */
+
+/* be sure to have your main box and navbar align with width px */
+/* having main be the */
+

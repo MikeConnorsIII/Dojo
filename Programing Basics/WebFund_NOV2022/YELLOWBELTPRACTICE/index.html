@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke Restauraunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+
+    <div class="col1">
+        <img src="" alt="logo.png">
+        <!-- add logo to src logo.png-->
+        <h4>About us</h4>
+        <h4>Menu</h4>
+        <h4>Catering</h4>
+        <h4>Hours</h4>
+        <ul>
+            <li>mon to fri 1100 to 2200</li>
+            <li>sat 1200 to 0100</li>
+            <li>sun 1200 to 2100</li>
+        </ul>
+        <h4>Locations</h4>
+        <img src="" alt="map.png">
+        <!-- insernt map.png -->
+        <h4 onclick="alert('call us at 555-555-5555')">Contact us</h4>
+    </div>
+<!-- right side content autoplay video on top and order guide/poke definition on bottom -->
+    <div class="col2">
+        <!-- <video src="" muted autoplay></video> -->
+        <!-- add video source here/remember to mute or the video will be removed/autoplay wont work if not muted -->
+
+                    <!------------------------------------------------- pay attention to this area--------------------------------- -->
+                    <div class="content">
+                <div class="order-guide">
+                    <h1>Poke your way</h1>
+                    <div class="row"onmouseover="showChoices('#step1')"></div>
+                        <!-- <div class="step">1</div> -->
+                        <h2 class="step">1</h1>
+                        <div class="step-text"></div>
+                                <h3>Choose your protein</h3>
+                                <h4 id="step1" class="hidden">salmon, tuna, tofu</h4>
+                    <div class="row" onmouseover="showChoices('#step2')"></div>
+                        <!-- <div class="step">1</div> -->
+                        <h2 class="step">1</h1>
+                        <div class="step-text"></div>
+                                <h3>Choose your base</h3>
+                                <h4 id="step2" class="hidden">rice, udon noodles, quinoa</h4>
+                    <div class="row" onmouseover="showChoices('#step3')"></div>
+                        <!-- <div class="step">1</div> -->
+                        <h2 class="step">1</h1>
+                        <div class="step-text"></div>
+                                <h3>Choose your marinade</h3>
+                                <h4 id="step3" class="hidden">ponzu, siracha aoli, seseme oil</h4>
+                    <!------------------------------------------------- pay attention to this area--------------------------------- -->
+                    
+                    <div class="poke-def">
+
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

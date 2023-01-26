@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1>Website request!</h1>
+    {%for message in get_flashed_messages(category_filter=['new'])%} <!-- #removed C:\Users\sir_m\OneDrive\Documents\Dojo\login_registration -->
+                <p class="text-danger">{{message}}</p>
+                {%endfor%}
+    <div class="container"></div>
+    <div class="d-flex justify-content-between bg-blue">
+        <h3>Request a website:</h3>
+        <div>
+            <a href="/users/dashboard" class="btn btn-primary">Dashboard</a>
+            <a href="/users/logout" class="btn btn-warning">Logout</a>
+        </div>
+    </div>
+</div>
+<form action="/websites/create" method="post">
+    <div class="mb-3">
+        <label for="type">Type of Website</label>
+        <input type="text" name="type" id="type">
+    </div>
+    <div class="mb-3">
+        <label for="name">Name of Website</label>
+        <input type="text" name="name" id="name">
+    </div>
+    <div>
+        <label for="priorities">Priorities of website</label>
+        <textarea name="priorities" id="priorities" cols="30" rows="10"></textarea>
+    </div>
+    <div class="mb-3">
+        <p>Amount of Pages</p>
+        <label for="pages">No</label>
+        <input type="number" name="pages" id="pages" value="0">
+    </div>
+    <div class="mb-3">
+        <p>Do you require your website to have mobile optimization? </p>
+        <label for="mobile"></label>
+        <input type="radio" name = "mobile" id="mobile" value="1"> Yes 
+        <input type="radio" name = "mobile" id="mobile" value="0"> No 
+    </div>
+    <div class="mb-3">
+        <p>Do you require your website to hosted? </p>
+        <label for="hosting"></label>
+        <input type="radio" name = "hosting" id="hosting" value="1"> Yes 
+        <input type="radio" name = "hosting" id="hosting" value="0"> No 
+    </div>
+    <div class="mb-3">
+        <p>Would you like an appointment for content creation and planning? </p>
+        <label for="content"></label>
+        <input type="radio" name = "content" id="content" value="1"> Yes 
+        <input type="radio" name = "content" id="content" value="0"> No 
+    </div>
+    <div class="mb-3">
+        <label for="services">Choose the services you require:</label>
+    <select name="services" id="services">
+    <option value="front-end">Front-end</option>
+    <option value="back-end">Back-end</option>
+    <option value="database">Database</option>
+    <option value="full-stack">Full-stack</option>
+    </select>
+    </div>
+    <button class="btn btn-primary">Request!</button>
+</form>
+</body>
+</html>

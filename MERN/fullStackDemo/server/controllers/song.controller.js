@@ -29,7 +29,7 @@ module.exports.oneSong = (req, res) => {
 module.exports.updateSong = (req, res) => {
     const idFromSpace = req.params.id
     const newValue = req.body
-    Song.findOneAndUpdate({_id: idFromSpace}, newValue, {new: true})
+    Song.findOneAndUpdate({_id: idFromSpace}, newValue, {new: true, runValidators: true})
     .then(updatedValue => res.json(updatedValue))
     .catch(err => res.json(err))
 }

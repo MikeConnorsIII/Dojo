@@ -19,15 +19,15 @@ const Display = () => {
     }, [deleteToggle])
     // use
 
-    // const handleDelete = (e, id) => {
-    //     console.log(`Deleting hero ${id}`, e)
-    //     axios.delete(`http://localhost:8000/api/product/${id}`)
-    //         .then((res) => {
-    //             setDeleteToggle(!deleteToggle)
+    const handleDelete = (e, id) => {
+        console.log(`Deleting hero ${id}`, e)
+        axios.delete(`http://localhost:8000/api/products/${id}`)
+            .then((res) => {
+                setDeleteToggle(!deleteToggle)
 
-    //         })
-    //         .catch((err) => { console.log(err) })
-    // }
+            })
+            .catch((err) => { console.log(err) })
+    }
 
     return (
         <div>
@@ -50,7 +50,7 @@ const Display = () => {
                                     <td>{product.price}</td>
                                     <td>{product.description}</td>
                                     {/* Condition ? "Truthy" : "Falsey" */}
-                                    {/* <td><button className="btn btn-success"><Link to={`/update/${product._id}`}>Edit</Link></button> | <button className="btn btn-danger" onClick={(e) => { handleDelete(e, product._id) }}>Delete</button> | <button className="btn btn-info"><Link to={`/details/${product._id}`}>View</Link></button></td> */}
+                                    <td><button className="btn btn-success"><Link to={`/update/${product._id}`}>Edit</Link></button> | <button className="btn btn-danger" onClick={(e) => { handleDelete(e, product._id) }}>Delete</button> | <button className="btn btn-info"><Link to={`/details/${product._id}`}>View</Link></button></td>
 
                                 </tr>
                             )

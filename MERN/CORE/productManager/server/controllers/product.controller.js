@@ -13,7 +13,7 @@ module.exports.addProduct = (req, res) => {
     .catch(err => res.status(400).json(err))
 }
 // allProduct
-module.exports.allProduct = (req, res) => {
+module.exports.allProducts = (req, res) => {
     Product.find()
     .then(product => res.json(product))
     .catch(err => res.json(err))
@@ -29,7 +29,7 @@ module.exports.oneProduct = (req, res) => {
 module.exports.updateProduct = (req, res) => {
     const idFromSpace = req.params.id
     const newValue = req.body
-    Product.findOneAndUpdate({_id: idFromSpace}, newValue, {new: true})
+    Product.findOneAndUpdate({_id: idFromSpace}, newValue, {new: true, runValidators: true})
     .then(updatedValue => res.json(updatedValue))
     .catch(err => res.json(err))
 }

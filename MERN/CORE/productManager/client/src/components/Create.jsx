@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Create = () => {
     
     const [title, setTitle] = useState("")
-    const [price, setPrice] = useState(5)
+    const [price, setPrice] = useState("")
     const [description, setDescription] = useState("")
 
   
@@ -16,20 +16,23 @@ const Create = () => {
     const handleSubmit = (e) => {
       e.preventDefault()
       const prodObj = {title, price, description}
-      axios.post('http://localhost:8000/api/songs', prodObj)
+      axios.post('http://localhost:8000/api/product', prodObj)
       .then(res => {
         navigate("/")
       })
         .catch(err =>{
-          const errorResponse = err.response.data.errors; // Get the errors from err.response.data
-          const errorArr = []; // Define a temp error array to push the messages in
-          for (const key of Object.keys(errorResponse)) { // Loop through all errors and get the messages
+          const errorResponse = err.response.data.errors; 
+          // console.log(err)
+          const errorArr = []; 
+          for (const key of Object.keys(errorResponse)) { 
               errorArr.push(errorResponse[key].message)
           }
-          // Set Errors
           setErrors(errorArr);
       })
     }
+
+    
+
   return (
     <div>
         <h1>Add a Product - Create</h1>
@@ -46,7 +49,7 @@ const Create = () => {
           </div>
           <div>
           <label>Description</label>
-            <input type="text" onChange={(e) => {setDescription(e.target.checked)}} />
+            <input type="text" onChange={(e) => {setDescription(e.target.value)}} />
           </div>
           <div>
             <button type="submit">Add a Product</button>

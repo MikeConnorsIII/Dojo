@@ -21,10 +21,14 @@ const Display = () => {
 
     
     return (
-        <div className='d-flx p-2'>
+        <div className='container'>
+            <div className='d-flex justify-content-between '>
             <h1>Pet Shelter</h1>
             <button className="btn btn-outline-success" ><Link to={`/create`}>add a pet to the shelter</Link></button>
+            </div>
+
             <h3>These pets are looking for a good home</h3>
+
             <table className='table table-dark'>
                 <thead>
                     <tr>
@@ -41,7 +45,7 @@ const Display = () => {
                                     <td>{pet.name}</td>
                                     
                                     <td>{pet.type}</td>
-                                    {/* Condition ? "Truthy" : "Falsey" */}
+
                                     <td>
                                         <button className="btn btn-success"><Link to={`/update/${pet._id}`}>Edit</Link></button> |  | <button className="btn btn-info"><Link to={`/details/${pet._id}`}>Details</Link></button></td>
 
